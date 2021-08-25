@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/lux/bootstrap.min.css"
+    />
+  </head>
+  <body><div class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="" class="navbar-brand">Accounts</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a  href="accounts-view" class="nav-link">Accounts</a></li>
+
+        <li class="nav-item">
+          <a href="add-accounts-view" class="nav-link">Add Accounts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fluid ">
+      <!--Accounts wiew start-->
+      <div class="row view" id="accounts-view">
+        <div class="col-10 offset-1 text-center">
+          <h2 class="display-5 m-4">Accounts</h2>
+       
+          <div class="row">
+            <div class=" col-8 offset-2">
+            <table  class="table table-striped">
+              <thead class="thead-dark ">
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="accounts-table-body">
+                
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--Accounts wiews end-->
+     <!--Add Account wies-->
+      <div class="row view " id="add-accounts-view">
+        <div class="col-10 offset-1 text-center">
+          <h2 class="display-5 m-4">Add Accounts</h2>
+       
+          <div class="row ">
+            <div class="col-8 offset-2">
+           <input type="text" class="form-control"placeholder="id"><br>
+           <input type="text" class="form-control"placeholder="name"><br>
+           <input type="text" class="form-control"placeholder="lastname"><br>
+           <input type="text" class="form-control"placeholder="email"><br>
+           <input type="text" class="form-control"placeholder="phone"><br>
+           <button id="saveBtn" class="form-control btn btn-info btn-sm">Save</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--Add Account view end-->
+      <!--Edit Account view-->
+      <div class="row view " id="edit-account-view">
+        <div class="col-10 offset-1 text-center">
+          <h2 class="display-5 m-4">Edit Accounts</h2>
+       
+          <div class="row ">
+            <div class="col-8 offset-2">
+           <input type="text" class="form-control edId"><br>
+           <input type="text" class="form-control edName"><br>
+           <input type="text" class="form-control edLastname"><br>
+           <input type="text" class="form-control edEmail"><br>
+           <input type="text" class="form-control edPhone"><br>
+           <button id="edit" class="form-control btn btn-warning btn-sm">Edit</button>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!--End Edit Account view-->
+    </div>
+   <script src="db.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
